@@ -1,0 +1,854 @@
+html, body {
+	margin: 0px;
+	padding: 0px;
+	font-family: "Brandon Grotesque",sans-serif;
+	/*background: #EEE;*/
+	color: #222;
+}
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+html {
+}
+
+.clear {
+	clear: both;
+}
+#home_body {
+	margin: 0px auto;
+	height: 3980px;
+}
+
+#home_splash {
+	display: block;
+	background: url("/img/stria_temp.jpg") no-repeat center;
+	width: 100%;
+	height: auto;
+	/*width: 1140px;
+	height: 640px;*/
+	text-align: center;
+	margin: 0px auto;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	-ms-background-size: cover;
+	background-size: cover;
+}
+
+#home_splash .logo {
+	position: relative;
+	top: 250px;
+}
+#striaText {
+	opacity: 0;
+	position: relative;
+	top: 80px;
+	color: white;
+	width: 800px;
+	margin: 0px auto;
+	font-size: 30px;
+	font-weight: 100;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+}
+
+#homeArrow {
+	position: relative;
+	display: block;
+	background: url("/img/homeArrow.png") no-repeat center;
+	width: 49px;
+	height: 28px;
+	margin: 0px auto;
+	top: 250px;
+}
+
+.content_wrapper {
+	z-index:50;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+}
+
+#menu_wrapper {
+	z-index: 100;
+	height: 196px;
+}
+
+#main_menu_container {
+	z-index: 200;
+	width: 100%;
+	min-width: 1140px;
+	margin: 0px auto;
+	position: relative;
+	text-align: center;
+	padding-top: 40px;
+	background: #FFF;
+}
+
+#main_menu_container .logo {
+	margin: 0px auto 12px;
+}
+#main_menu {
+	display: block;
+	/*
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
+	*/
+	background: #000;
+	color: gray;
+	width: 100%;
+	height: 70px;
+	margin: 0px auto;
+	padding: 0px 0px;
+}
+#main_menu ul {
+	list-style: none;
+	margin: 0px;
+	padding: 0px 7.5%;
+}
+
+
+#main_menu ul li {
+	display: inline-block;
+	font-family: "Brandon Grotesque";
+	font-weight: 100;
+	margin: 0px;
+	height: 70px;
+	line-height: 70px;
+	vertical-align: middle;
+	text-align: center;
+	width: 33%;
+}
+
+
+#main_menu ul li img{
+}
+
+#main_menu a {
+	position: relative;
+	display: block;
+	height: 70px;
+	color: gray;
+	text-decoration: none;
+	letter-spacing: 0.2em;
+	word-spacing: 0.2em;
+	text-transform: uppercase;
+}
+
+#main_menu a.active {
+	color: white;
+}
+#main_menu a:hover {
+	color: white;
+	text-decoration: underline;
+}
+#featured_container {
+	background: #FFF;
+	width: 100%;
+}
+#featured_list {
+	width: 1140px;
+	margin: 0px auto;
+	height: auto;
+}
+#featured_list .featured {
+	display: block;
+	position: relative;
+}
+#featured_list .featured img {
+	max-width: 100%;
+	width: auto;
+	height: auto;
+}
+
+.image_preload {
+	display: none;
+}
+
+#chf_link .featured {
+	display: block;
+	width: 1140px;
+	height: 386px;
+	background: url("/img/CrossedHeart.png") no-repeat;
+	background-size: cover;
+	z-index:5;
+}
+a#chf_link:hover .featured {
+	background: url("/img/CrossedHeartOver.png") no-repeat;
+	background-size: cover;
+}
+
+#jmj_link .featured {
+	display: block;
+	width: 1140px;
+	height: 386px;
+	background: url("/img/JeffMartin.png") no-repeat;
+	background-size: cover;
+	z-index:4;
+	margin-top: -25px;
+}
+a#jmj_link:hover .featured {
+	background: url("/img/JeffMartinComingSoon.png") no-repeat;
+	background-size: cover;
+}
+
+
+#ljl_link .featured {
+	display: block;
+	width: 1140px;
+	height: 386px;
+	background: url("/img/LoveJules.png") no-repeat;
+	background-size: cover;
+	z-index:3;
+	margin-top: -25px;
+}
+a#ljl_link:hover .featured {
+	background: url("/img/LoveJulesComingSoon.png") no-repeat;
+	background-size: cover;
+}
+
+
+
+#mushboo_link .featured {
+	display: block;
+	width: 1140px;
+	height: 386px;
+	background: url("/img/Mushboo.png") no-repeat;
+	background-size: cover;
+	z-index:2;
+	margin-top: -25px;
+}
+a#mushboo_link:hover .featured {
+	background: url("/img/MushbooComingSoon.png") no-repeat;
+	background-size: cover;
+}
+
+
+#pp_link .featured {
+	display: block;
+	width: 1140px;
+	height: 386px;
+	background: url("/img/PorchlightPress.png") no-repeat;
+	background-size: cover;
+	z-index:3;
+	margin-top: -25px;
+}
+a#pp_link:hover .featured {
+	background: url("/img/PorchlightPressOver.png") no-repeat;
+	background-size: cover;
+}
+/*
+#jmj_link:hover img {
+	content: url('/img/JeffMartinOver.png');
+}
+
+#pp_link:hover img {
+	content: url('/img/PorchlightPressOver.png');
+}
+*/
+#stria_info {
+	width: 800px;
+	margin: 0px auto;
+	height: 200px;
+}
+
+
+#contact_info {
+	width: 800px;
+	margin: 0px auto;
+	height: 400px;
+}
+
+
+#contact_info a {
+	font-weight: bold;
+}
+
+#contact_info a:hover {
+	text-decoration: underline;
+}
+.home_link {
+	width: 1140px;
+	margin: 0px auto;
+}
+a #whatIsLink {
+	display: block;
+	width: 1140px;
+	height: 303px;
+	background: url("/img/whatIsButton.jpg") no-repeat;
+}
+a:hover #whatIsLink {
+	background: url("/img/whatIsButtonOver.jpg") no-repeat;
+}
+
+a #whatIsLink  p {
+	width: 800px;
+	margin: 0px auto;
+	padding: 50px 0px 20px;
+	border-bottom: 1px solid white;
+	display: block;
+	font-weight: 200;
+	color: white;
+}
+a #contactLink {
+	display: block;
+	width: 1140px;
+	height: 303px;
+	background: url("/img/contactButton.jpg") no-repeat;
+}
+a:hover #contactLink {
+	background: url("/img/contactButtonOver.jpg") no-repeat;
+}
+h1 {
+	text-transform: uppercase;
+}
+p {
+	font-size: 21px;
+}
+a {
+	text-decoration: none;
+	outline: none;
+}
+a:visited {
+	color: black;
+}
+
+/* ============================================ */
+/* VIDEO PAGE */
+
+iframe#full-video { position: absolute; top: 0; left: 0; width: 100%; height: 100%; margin: 0; }
+#header-container { position: relative; overflow: hidden; }
+img.interview-thumb { display: block; width: 100%; height: auto; }
+img.interview-cover { width:100%; height: auto; margin: 0; position: relative; padding-bottom: 0; margin-bottom: 0; display: block; z-index: 0;}
+div#main_video_holder {
+	position: relative;
+	width: 1140px;
+	height: 640px;
+	margin: 0px auto;
+	/*
+	width: 100%;
+	height: auto;
+	*/
+}
+
+div#play {
+	cursor: pointer;
+	display: block;
+	 position: absolute; background: rgba(255, 255, 255, 0); top: 0; bottom: 0; width: 100%; opacity: 0;
+		transition: opacity .20s ease-in-out;
+   		-moz-transition: opacity .20s ease-in-out;
+   		-webkit-transition: opacity .20s ease-in-out;
+	}
+		div#play:hover { opacity: 1;}
+		div#play img { opacity: 0.7; position: absolute; width: 100px; height: auto; display: block; top: 50%; margin-top: -50px; left: 50%; margin-left: -75px;}
+			div#play img:hover { opacity: 1;}
+
+
+
+/* ============================================ */
+/* WHAT IS PAGE */
+#whatis_body {
+	height: 1000px;
+}
+
+#whatis_body p {
+	font-size: 18px;
+	font-weight: 200;
+}
+
+#wi_striaService {
+	width: 1140px;
+	margin: 60px auto;
+}
+
+#wi_striaService p {
+	text-transform: uppercase;
+	margin: 0px auto;
+	text-align: center;
+	font-size: 24px;
+	font-weight: 200;
+	letter-spacing: 6px;
+}
+
+#wi_missionStrategy {
+	width: 1140px;
+	margin: 30px auto;
+}
+#wi_missionStrategy .left {
+	width: 570px;
+	height: 600px;
+	
+	padding-top: 50px;
+	float: left;
+	background: url("/img/wiStrategyTech.png") no-repeat top;
+}
+
+#wi_missionStrategy .right {
+	width: 570px;
+	height: 600px;
+	
+	padding-top: 50px;
+	float: right;
+	background: url("/img/wiWhatIsStria.png") no-repeat top;
+}
+
+#wi_missionStrategy h2 {
+	width: 400px;
+	margin: 10px auto;
+	font-weight: 200;
+	text-transform: uppercase;
+}
+
+#wi_missionStrategy .left p,
+#wi_missionStrategy .right p {
+	width: 400px;
+	margin: 10px auto;
+}
+
+#wi_striaDefinition {
+	display: block;
+	width: 1140px;
+	height: 500px;
+	margin: 0px auto;
+	background: url("/img/wiStriaDefinition.png") no-repeat top;
+}
+
+#wi_makers {
+	width: 1140px;
+	margin: 30px auto;
+}
+#wi_makers .left {
+	width: 570px;
+	height: 600px;
+	
+	padding-top: 50px;
+	float: left;
+	background: url("/img/wiMakersLeft.png") no-repeat top;
+}
+
+#wi_makers .right {
+	width: 570px;
+	height: 600px;
+	
+	padding-top: 50px;
+	float: right;
+	background: url("/img/wiTheMakers.png") no-repeat top;
+}
+
+#wi_makers h2 {
+	width: 400px;
+	margin: 10px auto;
+	font-weight: 200;
+	text-transform: uppercase;
+}
+
+#wi_makers .left p,
+#wi_makers .right p {
+	width: 400px;
+	margin: 10px auto;
+}
+
+#wi_makers .ppsText {
+	width: 100%;
+	margin: 150px auto 0px;
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: 200;
+	font-size: 24px;
+	letter-spacing: 7px;
+}
+
+
+#wi_discoverConnectShare {
+	display: block;
+	width: 1140px;
+	height: 500px;
+	margin: 0px auto 100px;
+	background: url("/img/wiDiscoverConnectShare.png") no-repeat top;
+}
+
+
+#wi_discoverConnectShare p {
+	width: 650px;
+	padding-top: 500px;
+	margin: 0px auto;
+	text-align: center;
+}
+
+
+#wi_ecosystem {
+	display: block;
+	width: 640px;
+	height: 640px;
+	margin: 10px auto;
+	background: url("/img/wiEcosystem.png") no-repeat top;
+}
+
+
+
+#wi_prompt {
+	display: block;
+	width: 1140px;
+	margin: 10px auto;
+	text-align: center;
+}
+
+
+#wi_prompt p {
+	text-transform: uppercase;
+	font-weight: 200;
+	font-size: 24px;
+	letter-spacing: 7px;
+}
+/* ============================================ */
+/* CONTACT PAGE */
+#contact_body {
+	height: 1000px;
+}
+
+#contact_body p {
+	font-size: 18px;
+	font-weight: 200;
+}
+
+#contact_splash {
+	display: block;
+	width: 1140px;
+	height: 640px;
+	margin: 0px auto;
+	background: url("/img/contactSplash.jpg") no-repeat top;
+}
+
+
+#contact_digitalMakersBlurb {
+	width: 1140px;
+	margin: 60px auto;
+}
+
+#contact_digitalMakersBlurb p {
+	text-transform: uppercase;
+	margin: 0px auto;
+	text-align: center;
+	font-size: 24px;
+	font-weight: 200;
+	letter-spacing: 6px;
+}
+
+#contact_members {
+	display: block;
+	width: 1140px;
+	height: 1400px;
+	margin: 0px auto;
+	background: url("/img/TeamBG.png") no-repeat top;
+	
+	box-sizing: border-box;
+	padding-top: 420px;
+}
+
+#contact_members .meetTheTeam {
+	color: white;
+	text-transform: uppercase;
+	text-align: center;
+	width: 100%;
+	font-size: 26px;
+	letter-spacing: 4px;
+	font-weight: 200;
+	margin-bottom: 60px;
+}
+#contact_members p.name {
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-weight: 200;
+}
+#contact_members p.title {
+	font-size: 14px;
+}
+#contact_members .three_row {
+	width: 640px;
+	margin: 20px auto;
+}
+
+
+#contact_members .two_row {
+	width: 410px;
+	margin: 20px auto;
+}
+
+#contact_members .three_row .member:nth-child(1), #contact_members .three_row .member:nth-child(2), #contact_members .two_row .member:nth-child(1){
+	margin-right: 50px;
+}
+#contact_members .member {
+	float: left;
+	width: 180px;
+}
+#contact_members .member .portrait {
+	width: 180px;
+	height: 180px;
+}
+
+#ArianaPortrait {
+	display: block;
+	background: url("/img/teamAriana.jpg") no-repeat top center;
+}
+#ArianaPortrait:hover {
+	display: block;
+	background: url("/img/teamArianaOver.jpg") no-repeat top center;
+}
+
+#JeffPortrait {
+	display: block;
+	background: url("/img/teamJeff.jpg") no-repeat top center;
+}
+#JeffPortrait:hover {
+	display: block;
+	background: url("/img/teamJeffOver.jpg") no-repeat top center;
+}
+
+#SeanPortrait {
+	display: block;
+	background: url("/img/teamSean.jpg") no-repeat top center;
+}
+#SeanPortrait:hover {
+	display: block;
+	background: url("/img/teamSeanOver.jpg") no-repeat top center;
+}
+
+#ElisaPortrait {
+	display: block;
+	background: url("/img/teamElisa.jpg") no-repeat top center;
+}
+#ElisaPortrait:hover {
+	display: block;
+	background: url("/img/teamElisaOver.jpg") no-repeat top center;
+}
+
+#LiamPortrait {
+	display: block;
+	background: url("/img/teamLiam.jpg") no-repeat top center;
+}
+#LiamPortrait:hover {
+	display: block;
+	background: url("/img/teamLiamOver.jpg") no-repeat top center;
+}
+
+#TrevorPortrait {
+	display: block;
+	background: url("/img/teamTrevor.jpg") no-repeat top center;
+}
+#TrevorPortrait:hover {
+	display: block;
+	background: url("/img/teamTrevorOver.jpg") no-repeat top center;
+}
+
+#ChuieePortrait {
+	display: block;
+	background: url("/img/teamChuiee.jpg") no-repeat top center;
+}
+#ChuieePortrait:hover {
+	display: block;
+	background: url("/img/teamChuieeOver.jpg") no-repeat top center;
+}
+
+#BenPortrait {
+	display: block;
+	background: url("/img/teamBen.jpg") no-repeat top center;
+}
+#BenPortrait:hover {
+	display: block;
+	background: url("/img/teamBenOver.jpg") no-repeat top center;
+}
+
+
+#contact_members .member p {
+	text-align: center;
+	color: white;
+}
+
+#contact_digitalMakers {
+	width: 1140px;
+	margin: 30px auto;
+}
+#contact_digitalMakers .left {
+	width: 570px;
+	height: 350px;
+	
+	padding-top: 50px;
+	float: left;
+	background: url("/img/contactDigitalMakersLeft.png") no-repeat top;
+}
+
+#contact_digitalMakers .right {
+	width: 570px;
+	height: 350px;
+	
+	padding-top: 50px;
+	float: right;
+	background: url("/img/contactDigitalMakersRight.png") no-repeat top;
+}
+
+
+#contact_digitalMakers .left p,
+#contact_digitalMakers .right p {
+	width: 400px;
+	margin: 10px auto;
+}
+
+
+#contact_digitalMakers .right p {
+	text-transform: uppercase;
+	text-align: center;
+	font-size: 28px;
+	letter-spacing: 3px;
+}
+
+
+/* ============================================ */
+/* CONTACT FOOTER */
+#contact {
+	display: block;
+	width: 1140px;
+	height: 230px;
+	margin: 50px auto;
+	text-align: center;
+	background: url("/img/wiContactBrackets.png") no-repeat top;
+	padding-top: 10px;
+	box-sizing: border-box;
+}
+
+#contact p {
+	text-transform: uppercase;
+	font-weight: 600;
+	font-size: 20px;
+	letter-spacing: 5px;
+}
+
+
+#contact a {
+	color: black;
+}
+#contact a:hover {
+	text-decoration: underline;
+}
+.footer {
+	width: 100%;
+	min-width: 1140px;
+	height: 225px;
+	background: #000 url("/img/keepintouch_white.png") no-repeat center 50px;
+	padding-top: 180px;
+	box-sizing: border-box;
+}
+
+.footer p {
+	color: white;
+	width: 1140px;
+	margin: 0px auto;
+	font-weight: 200;
+	text-align: center;
+}
+/* Brandon Grotesque font */
+@font-face
+{
+font-family: "Brandon Grotesque";
+src: url('/fonts/Brandon_reg.otf');
+src: local("Brandon Grotesque"), url('/fonts/Brandon_reg.otf');
+}
+
+@font-face
+{
+font-family: "Brandon Grotesque";
+src: url('/fonts/Brandon_reg_it.otf');
+src: local("Brandon Grotesque"), url('/fonts/Brandon_reg_it.otf');
+font-style: italic;
+}
+
+
+@font-face
+{
+font-family: "Brandon Grotesque";
+src: url('/fonts/Brandon_light.otf');
+src: local("Brandon Grotesque"), url('/fonts/Brandon_light.otf');
+font-weight: 200;
+}
+
+@font-face
+{
+font-family: "Brandon Grotesque";
+src: url('/fonts/Brandon_light_it.otf');
+src: local("Brandon Grotesque"), url('/fonts/Brandon_light_it.otf');
+font-weight: 200;
+font-style: italic;
+}
+
+
+@font-face
+{
+font-family: "Brandon Grotesque";
+src: url('/fonts/Brandon_thin.otf');
+src: local("Brandon Grotesque"), url('/fonts/Brandon_thin.otf');
+font-weight: 100;
+}
+
+@font-face
+{
+font-family: "Brandon Grotesque";
+src: url('/fonts/Brandon_thin_it.otf');
+src: local("Brandon Grotesque"), url('/fonts/Brandon_thin_it.otf');
+font-weight: 100;
+font-style: italic;
+}
+
+
+@font-face
+{
+font-family: "Brandon Grotesque";
+src: url('/fonts/Brandon_med.otf');
+src: local("Brandon Grotesque"), url('/fonts/Brandon_med.otf');
+font-weight: 400;
+}
+
+@font-face
+{
+font-family: "Brandon Grotesque";
+src: url('/fonts/Brandon_med_it.otf');
+src: local("Brandon Grotesque"), url('/fonts/Brandon_med_it.otf');
+font-weight: 400;
+font-style: italic;
+}
+
+@font-face
+{
+font-family: "Brandon Grotesque";
+src: url('/fonts/Brandon_bld.otf');
+src: local("Brandon Grotesque"), url('/fonts/Brandon_bld.otf');
+font-weight: 600;
+}
+
+@font-face
+{
+font-family: "Brandon Grotesque";
+src: url('/fonts/Brandon_bld_it.otf');
+src: local("Brandon Grotesque"), url('/fonts/Brandon_bld_it.otf');
+font-weight: 600;
+font-style: italic;
+}
+
+
+@font-face
+{
+font-family: "Brandon Grotesque";
+src: url('/fonts/Brandon_blk.otf');
+src: local("Brandon Grotesque"), url('/fonts/Brandon_blk.otf');
+font-weight: 800;
+}
+
+@font-face
+{
+font-family: "Brandon Grotesque";
+src: url('/fonts/Brandon_blk_it.otf');
+src: local("Brandon Grotesque"), url('/fonts/Brandon_blk_it.otf');
+font-weight: 800;
+font-style: italic;
+}

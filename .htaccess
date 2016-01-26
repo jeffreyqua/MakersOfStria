@@ -1,0 +1,8 @@
+RewriteEngine On
+
+RewriteRule ^makers(/)?$ ./index.php
+RewriteRule ^whatis(/)?$ ./whatis.php
+RewriteRule ^contact(/)?$ ./contact.php
+
+#Projects
+RewriteRule ^makers/([^/]+)$ ./maker.php?m=$1
